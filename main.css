@@ -1,0 +1,64 @@
+/* you can put your own google fonts @import statement here! */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+* {
+	/* colors */
+	--background-color: #1a2619;
+	--foreground-color: #d5f5d2;
+	--dark-foreground-color: #799576;
+	--mono-background-color: #2b392a;
+	--mono-foreground-color: var(--foreground-color);
+	--border-color: var(--mono-background-color);
+
+	/* fonts */
+	--default-font: "Source Sans Pro", sans-serif;
+	--default-mono-font: "Fira Code", monospace;
+
+	/* sizes */
+	--largest-size: 72px;
+	--larger-size: 48px;
+	--large-size: 36px;
+	--medium-size: 18px;
+	--small-size: 10px;
+}
+
+/* do not edit anything under this comment unless you know what you are doing! */
+
+body {
+	background-color: var(--background-color);
+	color: var(--foreground-color);
+	font-family: var(--default-font);
+}
+* {
+	margin: 2px 0px 2px 8px;
+}
+a {
+	color: var(--foreground-color);
+	margin: 0;
+}
+td {
+	border-color: var(--border-color);
+	border-radius: 16px;
+}
+
+#sidepanel {
+	width: 333px;
+	height: 98.5vh;
+	border-right: 2px solid var(--border-color);
+}
+#content {
+	padding-left: 16px;
+}
+
+.sidepanelitem {
+	font-weight: 300;
+}
+.sidepanelitem a {
+	text-decoration: none;
+}
+
+.largest { font-size: var(--largest-size); }
+.larger { font-size: var(--larger-size); }
+.large { font-size: var(--large-size); }
+.medium { font-size: var(--medium-size); }
+.small { font-size: var(--small-size); }
