@@ -7,19 +7,20 @@
 	--foreground-color: #d5f5d2;
 	--dark-foreground-color: #799576;
 	--mono-background-color: #2b392a;
-	--mono-foreground-color: var(--foreground-color);
+	--mono-foreground-color: var(--dark-foreground-color);
 	--border-color: var(--mono-background-color);
+	--dark-border-color: var(--mono-foreground-color);
 
 	/* fonts */
 	--default-font: "Source Sans Pro", sans-serif;
 	--default-mono-font: "Fira Code", monospace;
 
 	/* sizes */
-	--largest-size: 72px;
+	--largest-size: 64px;
 	--larger-size: 48px;
 	--large-size: 36px;
 	--medium-size: 18px;
-	--small-size: 10px;
+	--small-size: 14px;
 }
 
 /* do not edit anything under this comment unless you know what you are doing! */
@@ -56,7 +57,20 @@ td {
 .sidepanelitem a {
 	text-decoration: none;
 }
-
+.codeblock {
+	font-family: var(--default-mono-font);
+	border: 2px solid var(--dark-border-color);
+	border-radius: 16px;
+	background-color: var(--mono-background-color);
+	color: var(--mono-foreground-color);
+	padding: 16px 28px 16px 28px;
+}
+.boldtxt {
+	font-weight: bold;
+}
+.italictxt {
+	font-style: italic;
+}
 .largest { font-size: var(--largest-size); }
 .larger { font-size: var(--larger-size); }
 .large { font-size: var(--large-size); }

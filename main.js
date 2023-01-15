@@ -13,7 +13,7 @@ function loadPage(inx) {
 		sidepanel += `<p class="sidepanelitem largest"><a href="#" onclick="pg=${i};load()">${panelItems[i].title}</a></p>\n`;
 	}
 	for (let c of item.content) {
-		content += `<p class="${c.size}">${c.cont}</p>`;
+		content += `<p class="${c.size}${c.codeBlock ? " codeblock" : ""}${c.italic ? " italictxt" : ""}${c.bold ? " boldtxt" : ""}">${c.cont}</p>`;
 	}
 	
 	return [sidepanel, content];
