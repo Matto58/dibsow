@@ -9,7 +9,6 @@ function loadPage(inx) {
 	let item = panelItems[inx];
 
 	for (let i in panelItems) {
-		console.log(i);
 		sidepanel += `<p class="sidepanelitem largest"><a href="#" onclick="pg=${i};load()">${panelItems[i].title}</a></p>\n`;
 	}
 	for (let c of item.content) {

@@ -7,7 +7,7 @@
 	--foreground-color: #d5f5d2;
 	--dark-foreground-color: #799576;
 	--mono-background-color: #2b392a;
-	--mono-foreground-color: var(--dark-foreground-color);
+	--mono-foreground-color: #b3d0b0;
 	--border-color: var(--mono-background-color);
 	--dark-border-color: var(--mono-foreground-color);
 
